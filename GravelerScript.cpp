@@ -63,8 +63,8 @@ int main()
 {
 	const clock_t begin_time = clock();
 	std::cout << "Generation Started\n";
-	spawnThreads(32, 31250); //32*31250 =  1 000 000
-	//spawnThreads(32, 31250000); //32 * 31 250 000 =  1 000 000 000
+	//spawnThreads(32, 31250); //32*31250 =  1 000 000
+	spawnThreads(32, 31250000); //32 * 31 250 000 =  1 000 000 000
 	std::cout << "Generation Finished\n";
 	std::cout << (float(clock() - begin_time) / CLOCKS_PER_SEC);
 	std::cout << " seconds";
